@@ -1,0 +1,35 @@
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+.download-icon {
+    stroke: #FF5500;
+    stroke-width: 1.5px;
+    stroke-linecap: square;
+}
+
+.context-icon {
+    fill: #B6B6BF;
+}
+
+.burger-icon {
+    stroke-width: 2px;
+    stroke-linecap: square;
+    stroke-linejoin: round;
+    stroke: black;
+}
+
+.close-burger-icon {
+    stroke-width: 2px;
+    stroke-linecap: square;
+    stroke-linejoin: round;
+    stroke: black;
+}
+
+.save-icon {
+    stroke: #141419;
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}

@@ -1,0 +1,53 @@
+.field {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    background: #101014;
+    border: 1px solid #3C3C41;
+    padding: 16px 24px;
+}
+
+.field__label {
+    color: #B6B6BF;
+    white-space: nowrap;
+    opacity: 0.4;
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+.field__input {
+    color: white;
+    width: fit-content;
+    height: 18px;
+    padding: 0;
+}
+
+.field__input::placeholder {
+    opacity: 0.6;
+}
+
+.field__clear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+}
+
+.field__clear-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.field__unit {
+    color: #B6B6BF;
+    white-space: nowrap;
+    opacity: 0.4;
+    font-size: 13px;
+    right: 0;
+    position: sticky;
+}
+
+.field__error {
+
+}

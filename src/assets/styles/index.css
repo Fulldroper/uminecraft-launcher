@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+a {
+  color: #B6B6BF;
+  text-decoration: none;
+}
+
+input, button {
+  font-family: e-Ukraine, sans-serif;
+}
+
+input {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: none;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+span, input, label, a, button, p {
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+

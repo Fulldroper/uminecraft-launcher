@@ -1,0 +1,62 @@
+.main__default {
+    width: 100%;
+    height: 100%;
+}
+
+.default {
+    position: relative;
+    display: flex;
+    transition: transform .4s ease;
+}
+
+.default:before {
+    left: -30px;
+    content: '';
+    position: absolute;
+    width: calc(100% + 25px);
+    height: 100%;
+    top: 0;
+    background-image: url("../assets/images/defaultContainer.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.default-aside-open {
+    transform: translate3d(-290px, 0, 0);
+}
+
+.default__page {
+    position: relative;
+    height: 100%;
+    width: 720px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: opacity 0.4s ease;
+
+    padding: 30px 40px 30px 0;
+}
+
+.default__page-aside-open {
+    opacity: 0.2;
+    pointer-events: none;
+    user-focus: none;
+    user-select: none;
+}
+
+.default__logo {
+    width: 340px;
+    height: 24px;
+    margin-bottom: 30px;
+}
+
+.default__aside {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+

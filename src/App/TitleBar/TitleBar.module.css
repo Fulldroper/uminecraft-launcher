@@ -1,0 +1,58 @@
+.title-bar {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.title-bar__logo {
+    width: 86px;
+    height: 18px;
+}
+
+.title-bar__drag-region {
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-app-region: drag;
+}
+
+.title-bar__controls {
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    -webkit-app-region: no-drag;
+}
+
+.title-bar__control{
+    transition: opacity .2s ease, transform .2s ease;
+    will-change: opacity, transform;
+    opacity: 0.2;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+}
+
+.title-bar__control-svg {
+    width: 24px;
+    height: 24px;
+}
+
+.title-bar__control:hover{
+    transform: scale3d(1.1, 1.1, 1.1);
+    opacity: 0.8;
+}
+
+.title-bar__control:active{
+    transform: scale3d(1.2, 1.2, 1.2);
+    opacity: 1;
+}

@@ -1,0 +1,128 @@
+.profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.profile__account {
+    width: 680px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile__account-some {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.profile__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.profile__name {
+    font-size: 16px;
+    color: #FFF;
+    margin-bottom: 5px;
+}
+
+.profile__avatar-btn {
+    color: rgba(182, 182, 191, 0.80);
+    font-size: 13px;
+    width: fit-content;
+}
+
+.profile__logout {
+    padding: 5px;
+    color: rgba(182, 182, 191, 0.80);
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__logout label {
+    margin-left: 12px;
+}
+
+.profile__inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.profile__input {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.profile__input:last-child {
+    margin-bottom: 0;
+}
+
+.profile__input-label {
+    width: fit-content;
+    height: fit-content;
+    color: rgba(182, 182, 191, 0.60);
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+.profile__input-field {
+    width: 475px;
+    height: fit-content;
+    color: #B6B6BF;
+}
+
+.profile__input-btn {
+    color: rgba(182, 182, 191, 0.80);
+    padding: 5px;
+    right: 0;
+    margin-left: auto;
+}
+
+.profile__password {
+    width: 100%;
+}
+
+.profile__password-label {
+    width: 100%;
+    color: rgba(182, 182, 191, 0.60);
+    font-size: 13px;
+}
+
+.profile__password-inputs {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 680px;
+    gap: 10px;
+}
+
+.profile__password-input {
+
+}
+
+.profile__password-input:last-child {
+    margin-right: 0;
+}
+
+.profile__buttons {
+    display: flex;
+}
+
+.profile__save {
+    margin-right: 20px;
+}
+
+.profile__cancel {
+    color: #B6B6BF60;
+}
