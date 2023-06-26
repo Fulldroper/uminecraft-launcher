@@ -1,19 +1,17 @@
 body {
   margin: 0;
+
 }
 
 * {
   box-sizing: border-box;
   user-select: none;
+  outline: none;
 }
 
 a {
   color: #B6B6BF;
   text-decoration: none;
-}
-
-input, button {
-  font-family: e-Ukraine, sans-serif;
 }
 
 input {
@@ -33,8 +31,8 @@ img {
   -webkit-user-drag: none;
 }
 
-span, input, label, a, button, p {
+span, input, label, a, button, p, option, select {
+  font-family: e-Ukraine, sans-serif;
   line-height: 1.4;
   letter-spacing: -0.02em;
 }
-

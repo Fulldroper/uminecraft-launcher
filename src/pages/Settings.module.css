@@ -16,10 +16,22 @@
 }
 
 .settings__header-select {
-    background: none;
     border: none;
     font-size: 16px;
     color: #FFF;
+    appearance: none;
+
+    position: relative;
+    padding: 0 45px 0 0;
+
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 0.800049L7 6.80005L1 0.80005' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E%0A");
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 14px 8px;
+}
+
+.settings__header-select option {
 
 }
 
