@@ -20,12 +20,8 @@
     color: white;
     height: 18px;
     padding: 0;
-    max-width: max-content;
+    min-width: 1px;
     flex-grow: 1;
-}
-
-.field__input:focus {
-    width: 1px;
 }
 
 .field__input_auto-resizable {

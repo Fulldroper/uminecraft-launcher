@@ -11,8 +11,8 @@ export const Settings = () => {
     return (
         <form className={classes['settings']}>
             <div className={classes['settings__header']}>
-                <label>Налаштування</label>
-                <select>
+                <span className={classes['settings__header-label']}>Налаштування</span>
+                <select className={classes['settings__header-select']}>
                     <option value={'global'}>Глобальні</option>
                     <option value={'TechnoMagic'}>TechnoMagic</option>
                 </select>
@@ -28,6 +28,8 @@ export const Settings = () => {
                 <Input
                     className={classes['settings__input']}
                     label={"Оперативна пам'ять:"}
+                    placeholder={'(G) 1024'}
+                    initValue={'1024'}
                     unit={'Mb'}
                 />
                 <div className={classes['settings__input']}>
@@ -38,18 +40,21 @@ export const Settings = () => {
                 </div>
                 <Input
                     className={classes['settings__input']}
+                    placeholder={'(G) 900'}
                     label={'Висота вікна:'}
                     unit={'Px'}
                 />
                 <Input
                     className={classes['settings__input']}
+                    placeholder={'(G) 600'}
                     label={'Ширина вікна:'}
                     unit={'Px'}
                 />
                 <SwitchedInput
                     className={classes['settings__fs']}
                     label={'Розташування файлів:'}
-                    disabled={false}
+                    disabled={true}
+                    initValue={'(G) D:/Games/Minecraft/'}
                     triggerIcon={<FolderIcon/>}
                     triggerLabel={'Змінити'}
                 />

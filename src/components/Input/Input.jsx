@@ -14,7 +14,7 @@ const Input = ({className, error, filters, label, name, placeholder, initValue =
         }
 
         if(autoResize) {
-            event.target.style.width = 0
+            event.target.style.width = 0;
             event.target.style.width = event.target.scrollWidth + 'px';
         }
     }
