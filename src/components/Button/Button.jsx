@@ -1,28 +1,55 @@
 import classes from './Button.module.css'
 
-const Button = ({variant ,className, icon, label}) => {
-    return (
-        <>
-            {variant === '1' && <Button1 className={className} icon={icon} label={label} />}
-            {variant === '2' && <Button2 className={className} icon={icon} label={label} />}
-        </>
-    )
-}
+const Button = ({className, leftIcon, rightIcon, icon, iconClassName, label, accent, onClick, type = 'button'}) => {
 
-const Button1 = ({className, icon, label}) => {
-    return (
-        <button className={`${className} ${classes['btn1']}`}>
-            <div className={classes['btn-icon']}>{icon}</div>
-            <label className={classes['btn1-label']}>{label}</label>
-        </button>
-    )
-}
 
-const Button2 = ({className, icon, label}) => {
     return (
-        <button className={`${className} ${classes['btn2']}`}>
-            <label className={classes['btn2-label']}>{label}</label>
-            <div className={classes['btn-icon']}>{icon}</div>
+        <button
+            className={`
+                ${className ? className : ''}
+                ${classes['button']} 
+                ${accent ? classes['button_accent'] : ''}
+            `}
+            onClick={onClick}
+            type={type}
+        >
+            {leftIcon &&
+                <div
+                    className={`
+                        ${iconClassName ? iconClassName : ''}
+                        ${classes['button__icon']} 
+                        ${classes['button__icon_left']}
+                    `}
+                >
+                    {leftIcon}
+                </div>
+            }
+            {icon &&
+                <div
+                    className={`
+                        ${iconClassName ? iconClassName : ''}
+                        ${classes['button__icon']} 
+                    `}
+                >
+                    {icon}
+                </div>
+            }
+            {label &&
+                <label className={classes['button__label']}>
+                    {label}
+                </label>
+            }
+            {rightIcon &&
+                <div
+                    className={`
+                        ${iconClassName ? iconClassName : ''}
+                        ${classes['button__icon']} 
+                        ${classes['button__icon_right']}
+                    `}
+                >
+                    {rightIcon}
+                </div>
+            }
         </button>
     )
 }

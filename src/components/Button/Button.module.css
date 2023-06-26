@@ -1,38 +1,47 @@
-.btn-icon {
-    width: 18px;
-    height: 18px;
-}
-
-.btn1 {
-    width: fit-content;
-
+.button {
     display: flex;
     align-items: center;
     justify-content: center;
 
     padding: 16px 24px;
     background: none;
+
+    color: #B6B6BF;
+    cursor: pointer;
 }
 
-.btn1-label {
+.button_accent {
+    color: #14141A;
+    background: #D9D000;
+    box-shadow: 0 10px 20px -10px rgba(217, 208, 0, 0.60);
+    border-radius: 10px;
+
+    transition: all .2s ease;
+}
+
+.button_accent:hover {
+    background: #E5DC00;
+    box-shadow: 0 10px 20px -10px rgba(217, 208, 0, 0.80);
+}
+
+.button__label {
     white-space: nowrap;
+    color: inherit;
+    cursor: pointer;
+}
+
+.button__icon {
+    width: 18px;
+    height: 18px;
+    color: inherit;
+}
+
+.button__icon_left {
+    margin-right: 16px;
+}
+
+.button__icon_right {
     margin-left: 16px;
 }
 
-.btn2 {
-    width: fit-content;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 16px 24px;
-    border-radius: 10px;
-    background: #D9D000;
-    box-shadow: 0 10px 20px -10px rgba(217, 208, 0, 0.60);
-}
-
-.btn2-label {
-    white-space: nowrap;
-    margin-right: 16px;
-}

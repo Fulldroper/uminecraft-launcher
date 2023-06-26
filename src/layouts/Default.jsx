@@ -1,21 +1,28 @@
-import {Outlet} from "react-router-dom";
+import {Outlet, useLocation} from "react-router-dom";
 import classes from "./Default.module.css";
 import {FullLogo} from "../components/svg/Logo";
 import {AsideBar} from "./AsideBar";
 import {useUI} from "../store/ui-context";
+import {useEffect} from "react";
 
 const DefaultLayout = () => {
     const uiContext = useUI();
 
+    const location = useLocation();
+
+    useEffect(() => {
+        uiContext.AsideToggle(false);
+    }, [location])
+
     const defaultClass = `
         ${classes['main__default']} 
         ${classes['default']} 
-        ${uiContext.isAsideOpen && classes['default-aside-open']}
+        ${uiContext.isAsideOpen ? classes['default-aside-open'] : ''}
     `;
 
     const pageClass = `
         ${classes['default__page']}
-        ${uiContext.isAsideOpen && classes['default__page-aside-open']}
+        ${uiContext.isAsideOpen ? classes['default__page-aside-open'] : ''}
     `;
 
     return (

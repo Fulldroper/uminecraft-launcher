@@ -1,3 +1,48 @@
+.settings {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings__header {
+
+}
+
+.settings__checkboxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -5px -20px;
+    padding: 20px 0;
+
+}
+
+.settings__checkbox {
+    margin: 5px 20px;
+}
+
+.settings__inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -5px -20px;
+}
+
 .settings__input {
+    width: calc(50% - 40px);
+    margin: 5px 20px;
+}
+
+.settings__fs {
+    width: calc(100% - 40px);
+    padding-top: 5px;
+    margin: 5px 20px;
+}
+
+.settings__controls {
+    display: flex;
+    flex-direction: row;
+}
+
+.settings__control {
 
 }

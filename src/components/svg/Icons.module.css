@@ -14,22 +14,64 @@ svg {
 }
 
 .burger-icon {
+    stroke: #141419;
     stroke-width: 2px;
     stroke-linecap: square;
     stroke-linejoin: round;
-    stroke: black;
 }
 
 .close-burger-icon {
+    stroke: #141419;
     stroke-width: 2px;
     stroke-linecap: square;
     stroke-linejoin: round;
-    stroke: black;
 }
 
 .save-icon {
+    fill: none;
     stroke: #141419;
-    stroke-width: 1.5px;
+    stroke-width: 1px;
     stroke-linecap: round;
     stroke-linejoin: round;
+}
+
+.delete-icon {
+    stroke: #141419;
+    stroke-width:1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dropdown-icon {
+    stroke: #141419;
+    stroke-width: 1.5px;
+}
+
+.play-icon {
+    fill: white;
+}
+
+.folder-icon {
+    stroke:#B6B6BF;
+    stroke-width:2;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+.edit-icon {
+    stroke:#B6B6BF;
+    stroke-width:1.5;
+    stroke-linecap:square ;
+}
+
+.logout-icon {
+    stroke:#B6B6BF;
+    stroke-width:1.5;
+    stroke-linecap:square;
+}
+
+.check-icon {
+    stroke:#B6B6BF;
+    stroke-width: 1.5;
+    stroke-linecap:square;
 }

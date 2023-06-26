@@ -5,6 +5,7 @@
     background: #101014;
     border: 1px solid #3C3C41;
     padding: 16px 24px;
+    cursor: text;
 }
 
 .field__label {
@@ -17,9 +18,18 @@
 
 .field__input {
     color: white;
-    width: fit-content;
     height: 18px;
     padding: 0;
+    max-width: max-content;
+    flex-grow: 1;
+}
+
+.field__input:focus {
+    width: 1px;
+}
+
+.field__input_auto-resizable {
+    flex-grow: initial;
 }
 
 .field__input::placeholder {
@@ -32,6 +42,8 @@
     align-items: center;
     width: 18px;
     height: 18px;
+    margin-right: 20px;
+    margin-left: 10px;
 }
 
 .field__clear-icon {
@@ -44,8 +56,7 @@
     white-space: nowrap;
     opacity: 0.4;
     font-size: 13px;
-    right: 0;
-    position: sticky;
+    margin-left: auto;
 }
 
 .field__error {

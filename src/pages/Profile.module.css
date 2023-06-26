@@ -5,6 +5,11 @@
     margin-top: 20px;
 }
 
+.profile__button-icon {
+    width: 18px;
+    height: 18px;
+}
+
 .profile__account {
     width: 680px;
     display: flex;
@@ -48,10 +53,6 @@
     align-items: center;
 }
 
-.profile__logout label {
-    margin-left: 12px;
-}
-
 .profile__inputs {
     display: flex;
     flex-direction: column;
@@ -59,12 +60,8 @@
 }
 
 .profile__input {
-    display: flex;
+    width: 100%;
     margin-bottom: 10px;
-}
-
-.profile__input:last-child {
-    margin-bottom: 0;
 }
 
 .profile__input-label {
@@ -89,6 +86,7 @@
 }
 
 .profile__password {
+    margin-top: 10px;
     width: 100%;
 }
 

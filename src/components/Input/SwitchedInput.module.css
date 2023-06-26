@@ -1,0 +1,25 @@
+.input {
+    display: flex;
+    align-items: center;
+}
+
+.input__label {
+    color: #B6B6BF;
+    font-size: 13px;
+    opacity: 0.6;
+    margin-right: 20px;
+}
+
+.input__field {
+    color: #B6B6BF;
+    font-size: 13px;
+    min-width: fit-content;
+    margin-right: 20px;
+    width: 0;
+}
+
+.input__trigger {
+    right: 0;
+    margin-left: auto;
+    padding: 5px;
+}

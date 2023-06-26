@@ -3,6 +3,7 @@ import React, {useContext, useState} from "react";
 const UIContext = React.createContext({
     isAsideOpen: false,
     onAsideToggle: () => {},
+    AsideToggle: (state) => {}
 });
 
 export const UIContextProvider = ({children}) => {
@@ -12,11 +13,16 @@ export const UIContextProvider = ({children}) => {
         setIsAsideOpen(!isAsideOpen);
     }
 
+    const AsideToggleHandler = (state) => {
+        setIsAsideOpen(state);
+    }
+
     return (
         <UIContext.Provider
             value={{
                 isAsideOpen: isAsideOpen,
-                onAsideToggle: onAsideToggleHandler
+                onAsideToggle: onAsideToggleHandler,
+                AsideToggle: AsideToggleHandler
             }}
         >
             {children}

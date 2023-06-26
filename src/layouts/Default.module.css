@@ -29,8 +29,8 @@
 .default__page {
     position: relative;
     height: 100%;
-    width: 720px;
-
+    min-width: 720px;
+    max-width: 720px;
     display: flex;
     flex-direction: column;
 

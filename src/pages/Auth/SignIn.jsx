@@ -3,8 +3,11 @@ import classes from "./Auth.module.css";
 import Input from "../../components/Input/Input";
 import GoogleLogo from '../../assets/images/google.svg';
 import FacebookLogo from '../../assets/images/facebook.png';
+import {Link} from "react-router-dom";
+import Button from "../../components/Button/Button";
 
 const SignIn = () => {
+
     return (
         <div className={classes['login']}>
             <FullLogo className={classes['login__logo']}/>
@@ -13,7 +16,7 @@ const SignIn = () => {
                     <Input className={classes['login__input']} placeholder={'Email'}/>
                     <Input className={classes['login__input']} placeholder={'Пароль'} type={'password'}/>
                 </div>
-                <button className={classes['login__submit']} type='button'>Увійти</button>
+                <Button className={classes['login__submit']} accent label={'Увійти'} type={'submit'}/>
                 <div className={classes['login__oauths']}>
                     <button className={classes['login__oauth']} type='button'>
                         <img className={classes['login__oauth-logo']} src={FacebookLogo} alt='Facebook Logo'/>
@@ -24,8 +27,8 @@ const SignIn = () => {
                 </div>
             </form>
             <div className={classes['login__links']}>
-                <a className={classes['login__link']} href={'/'}>Забули пароль?</a>
-                <a className={classes['login__link']} href={'/auth/sign-up'}>Регістрація нового аккаунту</a>
+                <Link to={'/'} className={classes['login__link']}>Забули пароль?</Link>
+                <Link to={'/auth/sign-up'} className={classes['login__link']}>Регістрація нового аккаунту</Link>
             </div>
         </div>
     )

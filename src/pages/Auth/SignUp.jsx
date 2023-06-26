@@ -1,6 +1,8 @@
 import classes from "./Auth.module.css";
 import {FullLogo} from "../../components/svg/Logo";
 import Input from "../../components/Input/Input";
+import {Link} from "react-router-dom";
+import Button from "../../components/Button/Button";
 
 const SignUp = () => {
     return (
@@ -13,10 +15,11 @@ const SignUp = () => {
                     <Input className={classes['login__input']} placeholder={'Пароль'} type={'password'}/>
                     <Input className={classes['login__input']} placeholder={'Повторити пароль'} type={'password'}/>
                 </div>
-                <button className={classes['login__submit']} type='button'>Увійти</button>
+                <Button className={classes['login__submit']} accent label={'Зареєструватися'} />
+
             </form>
             <div className={classes['login__links']}>
-                <a className={classes['login__link']} href={'/auth/sign-in'}>У мене є аккаунт</a>
+                <Link to={'/auth/sign-in'} className={classes['login__link']}>У мене є аккаунт</Link>
             </div>
         </div>
     )

@@ -2,6 +2,7 @@ import {useState} from "react";
 import classes from "./Servers.module.css";
 import {ContextIcon, DownloadIcon} from "../../components/svg/Icons";
 import ServerIcon from '../../assets/images/serverIcon.jpg';
+import {Link} from "react-router-dom";
 
 const ServerCard = ({className}) => {
     // eslint-disable-next-line no-unused-vars
@@ -12,14 +13,14 @@ const ServerCard = ({className}) => {
     };
 
     const onBlur = () => {
-        setIsHover(true)
+        setIsHover(false)
     };
 
     return (
         <div className={`${className} ${classes['server-card']}`} onFocus={onFocus} onBlur={onBlur}>
             <div className={classes['server-card__header']}>
                 <DownloadIcon className={classes['server-card__download-icon']} />
-                <a className={classes['server-card__title']} href={'/server'}>TechnoMagic</a>
+                <Link to={'/server'} className={classes['server-card__title']}>TechnoMagic</Link>
                 <ContextIcon className={classes['server-card__context-icon']}/>
             </div>
             <img className={classes['server-card__icon']} src={ServerIcon} alt={'ServerIcon'}/>

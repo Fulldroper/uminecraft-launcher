@@ -2,7 +2,8 @@ import classes from "./AsideBar.module.css";
 import {BurgerIcon, CloseBurgerIcon} from "../components/svg/Icons";
 import Avatar from "../assets/images/small_avatar.jpg";
 import {useUI} from "../store/ui-context";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import Button from "../components/Button/Button";
 
 export const AsideBar = ({className}) => {
     const uiContext = useUI();
@@ -10,26 +11,38 @@ export const AsideBar = ({className}) => {
         uiContext.onAsideToggle();
     };
 
+    /*className={`
+        ${classes['aside__navbar-link']}
+        ${({ isActive }) =>
+            isActive ? classes['aside__navbar-link_active'] : ''
+        }`
+    }*/
+
+    const navLinkClasses = ({isActive}) => isActive ? `${classes['aside__navbar-link']} ${classes['aside__navbar-ling_active']}` : classes['aside__navbar-link'];
+
     return (
         <div className={`${className} ${classes['aside']} `}>
-            <button className={classes['aside__trigger']} onClick={onAsideTriggerHandler}>
-                {!uiContext.isAsideOpen ?
-                    <BurgerIcon className={classes['aside__trigger-icon']}/>
-                    :
-                    <CloseBurgerIcon className={classes['aside__trigger-icon']}/>
+            <Button
+                className={classes['aside__trigger']}
+                onClick={onAsideTriggerHandler}
+                accent
+                iconClassName={classes['aside__trigger-icon']}
+                icon={!uiContext.isAsideOpen ?
+                    <BurgerIcon className={classes['aside__trigger-icon']} /> :
+                    <CloseBurgerIcon className={classes['aside__trigger-icon']} />
                 }
-            </button>
+            />
             <div className={classes['aside-bar']}>
-                <Link to={'profile'} className={classes['aside__profile']}>
+                <NavLink to={'/auth/sign-in'} className={classes['aside__profile']} href={'/auth/sign-in'}>
                     <span className={classes['aside__profile-name']}>UserName</span>
                     <button className={classes['aside__profile-avatar']}>
                         <img className={classes['profile__avatar-icon']} src={Avatar} alt={'avatar'}/>
                     </button>
-                </Link>
+                </NavLink>
                 <div className={classes['aside__navbar']}>
-                    <a className={classes['aside__navbar-link']} href={'/'}>Сервери</a>
-                    <a className={classes['aside__navbar-link']} href={'/auth/sign-in'}>Мій профіль</a>
-                    <a className={classes['aside__navbar-link']} href={'/settings'}>Налаштування</a>
+                    <NavLink to={'/'} className={navLinkClasses} >Сервери</NavLink>
+                    <NavLink to={'/profile'} className={navLinkClasses} >Мій профіль</NavLink>
+                    <NavLink to={'/settings'} className={navLinkClasses} >Налаштування</NavLink>
                 </div>
                 <div className={classes['aside__version']}>
                     <span className={classes['aside__version-text']}>v0.12 beta</span>

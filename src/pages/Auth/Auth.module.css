@@ -35,24 +35,7 @@
 
 .login__submit {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: all .2s ease;
-
-    padding: 16px 24px;
-    background: #D9D000;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px -10px rgba(217, 208, 0, 0.60);
-    color: #141419;
 }
-
-.login__submit:hover {
-    background: #E5DC00;
-    box-shadow: 0 10px 20px -10px rgba(217, 208, 0, 0.80);
-}
-
 
 .login__oauths {
     display: flex;
