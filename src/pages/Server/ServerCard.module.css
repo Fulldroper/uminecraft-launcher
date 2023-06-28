@@ -1,0 +1,164 @@
+.server-card {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #18181F;
+
+    transition: background 0.4s ease;
+}
+
+.server-card:hover {
+    background: #1D1D24;
+}
+
+.server-card__header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.server-card__title {
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.server-card__download-icon {
+    width: 16px;
+    height: 18px;
+}
+
+.server-card__download-icon_active {
+    stroke: #00FFC2;
+}
+
+.server-card__download-icon_need-update {
+    stroke: #D9D000;
+}
+
+.server-card__download-icon_need-download {
+    stroke: #FF5500;
+}
+
+
+.server-card__context-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.server-card__preview {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.server-card__preview:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background: rgba(21, 21, 26, .8);
+
+    z-index: 2;
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+}
+
+.server-card:hover .server-card__preview::before {
+    opacity: 1;
+}
+
+.server-card__preview-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    transition: transform 0.6s ease;
+    will-change: transform;
+}
+
+.server-card:hover .server-card__preview-img {
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+.server-card__preview-icon {
+    position: relative;
+    padding: 15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #15151A;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease, color 0.4s ease, background 0.4s ease;
+    will-change: transform;
+    transform: scale3d(0, 0, 1);
+}
+
+.server-card:hover .server-card__preview-icon {
+    opacity: 1;
+    visibility: visible;
+    transform: scale3d(1, 1, 1);
+}
+
+.server-card__preview-icon:hover {
+    background: #E5DC00;
+    transform: scale3d(1.2, 1.2, 1) !important;
+    color: #101014;
+}
+
+
+.server-card__footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.server-card__version {
+    color: #B6B6BF;
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    margin-right: auto;
+}
+
+.server-card__online {
+    color: #B6B6BF;
+    font-size: 13px;
+}
+
+.server-card__online-icon_active:before {
+    content: '• ';
+    color: #00FFC2;
+}
+
+.server-card__online-icon_bad-connection:before {
+    content: '• ';
+    color: #D9D000;
+}
+
+.server-card__online-icon_closed:before {
+    content: '• ';
+    color: #FF5500;
+}

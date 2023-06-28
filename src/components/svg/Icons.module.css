@@ -4,7 +4,6 @@ svg {
 }
 
 .download-icon {
-    stroke: #FF5500;
     stroke-width: 1.5px;
     stroke-linecap: square;
 }
@@ -48,7 +47,7 @@ svg {
 }
 
 .play-icon {
-    fill: white;
+    fill: currentColor;
 }
 
 .folder-icon {
@@ -74,4 +73,10 @@ svg {
     stroke:#B6B6BF;
     stroke-width: 1.5;
     stroke-linecap:square;
+}
+
+.back-icon {
+    stroke: #B6B6BF;
+    stroke-width: 1.5;
+    stroke-linecap: square;
 }

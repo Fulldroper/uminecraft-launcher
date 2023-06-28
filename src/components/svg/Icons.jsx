@@ -61,7 +61,7 @@ export const DeleteIcon = ({className}) => {
 export const DropdownIcon = ({className}) => {
     return (
         <svg className={`${className} ${classes['dropdown-icon']}`} viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path opacity="0.4" d="M16 7L10 13L4 7" />
+            <path d="M16 7L10 13L4 7" />
         </svg>
 
     )
@@ -70,7 +70,7 @@ export const DropdownIcon = ({className}) => {
 export const PlayIcon = ({className}) => {
     return (
         <svg className={`${className} ${classes['play-icon']}`} viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-            <path opacity="0.65" d="M5 1L17 9L5 17V1Z" />
+            <path d="M5 1L17 9L5 17V1Z" />
         </svg>
 
     )
@@ -111,5 +111,14 @@ export const CheckIcon = ({className}) => {
         <svg className={`${className} ${classes['logout-icon']}`} viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
             <path d="M13 4L6.125 12L3 8.36364"  />
         </svg>
+    )
+}
+
+export const BackIcon = ({className}) => {
+    return (
+        <svg className={`${className} ${classes['back-icon']}`} viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 9H2M2 9L7.06897 13M2 9L7.06897 5" />
+        </svg>
+
     )
 }

@@ -1,0 +1,226 @@
+.server {
+    display: flex;
+    flex-direction: column;
+}
+
+.server__header {
+    display: flex;
+    margin-bottom: 30px;
+
+}
+
+.server__header-poster {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    width: 220px;
+    height: 160px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.server__header-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 430px;
+}
+
+.server__header-title-row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.server__header-title {
+    font-size: 13px;
+    color: #FFF;
+}
+
+.server__header-back {
+    color: #B6B6BF;
+    padding: 0;
+    height: 18px;
+    margin-left: auto;
+}
+
+.server__header-context {
+    color: #B6B6BF;
+    padding: 0;
+    height: 18px;
+    margin-left: 20px;
+}
+
+.server__header-meta {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.server__header-mods-btn {
+    padding: 5px 10px;
+    margin-left: auto;
+}
+
+.server__header-players {
+    color: #B6B6BF;
+    font-size: 13px;
+
+}
+
+.server__header-players:before {
+    content: '• ';
+}
+
+.server__header-players_active:before {
+    color: #00FFC2;
+}
+
+.server__header-players-connection:before {
+    color: #D9D000;
+}
+
+.server__header-players_closed:before {
+    color: #FF5500;
+}
+
+.server__header-version {
+    font-size: 13px;
+    color: #B6B6BF;
+    margin-left: 20px;
+}
+
+.server__header-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -4px;
+}
+
+.server__header-tag {
+    height: 25px;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #B6B6BF;
+    font-size: 12px;
+    background: #1A1A1F;
+}
+
+
+.server__description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.server__description-name {
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.server__description-text {
+    color: #B6B6BF;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.server__friends {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.server__friends-name {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.server__friends-count {
+    color: #B6B6BF;
+    font-size: 13px;
+    opacity: 0.4;
+    margin-left: 20px;
+}
+
+.server__friends-box {
+    display: flex;
+}
+
+.server__friend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: #1D1D22;
+}
+
+.server__friend-img {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #15151A;
+    border-radius: 30px;
+
+}
+
+.server__friend-name {
+    display: none;
+    font-size: 13px;
+    margin-left: 5px;
+    margin-right: 10px;
+    color: #FFF;
+}
+
+.server__friend:hover .server__friend-name {
+    display: flex;
+}
+
+.server__controls {
+    display: flex;
+}
+
+.server__control-download {
+
+}
+
+.server__control-download_pending {
+
+}
+
+.server__control-update {
+
+}
+
+.server__control-update_pending {
+
+}
+
+.server__control-play {
+
+}
+
+.server__control-play_pending {
+
+}
+
+.server__control-delete {
+
+}
+
+.server__control-delete_pending {
+
+}
+
+.server__loading-progress {
+
+}
+

@@ -32,9 +32,9 @@ export const Settings = () => {
                     initValue={'1024'}
                     unit={'Mb'}
                 />
-                <div className={classes['settings__input']}>
-                    <label>Тема</label>
-                    <select>
+                <div className={`${classes['settings__input']} ${classes['settings__input-select']}`}>
+                    <label className={classes['settings__input-select-label']}>Тема:</label>
+                    <select className={classes['settings__input-select-field']} >
                         <option>Default</option>
                     </select>
                 </div>
