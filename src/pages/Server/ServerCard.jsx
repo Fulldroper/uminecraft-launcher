@@ -1,5 +1,5 @@
 import classes from "./ServerCard.module.css";
-import {ContextIcon, DownloadIcon, PlayIcon} from "../../components/svg/Icons";
+import {DownloadIcon, PlayIcon} from "../../components/svg/Icons";
 import {Link} from "react-router-dom";
 import Button from "../../components/Button/Button";
 
@@ -32,7 +32,6 @@ const ServerCard = ({className, serverPreviewInfo}) => {
             <div className={classes['server-card__header']}>
                 <DownloadIcon className={updatedClasses} />
                 <Link to={'/server'} className={classes['server-card__title']}>{title}</Link>
-                <ContextIcon className={classes['server-card__context-icon']}/>
             </div>
             <Link to={'/server'} className={classes['server-card__preview']}>
                 <img className={classes['server-card__preview-img']} src={icon} alt={'ServerIcon'}/>

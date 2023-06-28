@@ -1,6 +1,8 @@
 import ServerCard from "./ServerCard";
 import classes from "./Servers.module.css";
 import ServerIcon from '../../assets/images/serverIcon.jpg';
+import ContextMenu from "../../components/ContextMenu/ContextMenu";
+import {CubeIcon, DeleteIcon, ToolIcon, ServerIcon as ServIcon} from "../../components/svg/Icons";
 
 const Servers = () => {
 
@@ -88,6 +90,7 @@ const Servers = () => {
         },
 
     ]
+
 
     return (
         <div className={classes['servers']}>

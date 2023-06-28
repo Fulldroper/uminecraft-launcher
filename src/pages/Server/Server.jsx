@@ -2,7 +2,12 @@ import classes from "./Server.module.css";
 import ServerIcon from '../../assets/images/serverIcon.jpg';
 import Avatar from '../../assets/images/friend_avatar.jpg';
 import Button from "../../components/Button/Button";
-import {BackIcon, ContextIcon, DeleteIcon, DownloadIcon} from "../../components/svg/Icons";
+import {
+    BackIcon,
+    ContextIcon,
+    DeleteIcon,
+    DownloadIcon,
+} from "../../components/svg/Icons";
 
 const Server = () => {
     const isUpdated = '';

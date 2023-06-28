@@ -10,7 +10,7 @@ export const UIContextProvider = ({children}) => {
     const [isAsideOpen, setIsAsideOpen] = useState(false);
 
     const onAsideToggleHandler = () => {
-        setIsAsideOpen(!isAsideOpen);
+        setIsAsideOpen(value => !value);
     }
 
     const AsideToggleHandler = (state) => {

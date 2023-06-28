@@ -5,7 +5,6 @@ svg {
 
 .download-icon {
     stroke-width: 1.5px;
-    stroke-linecap: square;
 }
 
 .context-icon {
@@ -15,35 +14,29 @@ svg {
 .burger-icon {
     stroke: #141419;
     stroke-width: 2px;
-    stroke-linecap: square;
-    stroke-linejoin: round;
 }
 
 .close-burger-icon {
     stroke: #141419;
     stroke-width: 2px;
-    stroke-linecap: square;
-    stroke-linejoin: round;
 }
 
 .save-icon {
     fill: none;
     stroke: #141419;
-    stroke-width: 1px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    stroke-width: 1.5px;
 }
 
 .delete-icon {
     stroke: #141419;
-    stroke-width:1.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    stroke-width:1.5px;
+    fill: none;
 }
 
 .dropdown-icon {
     stroke: #141419;
     stroke-width: 1.5px;
+    fill: none;
 }
 
 .play-icon {
@@ -51,32 +44,46 @@ svg {
 }
 
 .folder-icon {
-    stroke:#B6B6BF;
-    stroke-width:2;
-    stroke-linecap:round;
-    stroke-linejoin:round;
+    stroke: #B6B6BF;
+    stroke-width: 2px;
 }
 
 .edit-icon {
-    stroke:#B6B6BF;
-    stroke-width:1.5;
-    stroke-linecap:square ;
+    stroke: #B6B6BF;
+    stroke-width: 1.5px;
 }
 
 .logout-icon {
-    stroke:#B6B6BF;
-    stroke-width:1.5;
-    stroke-linecap:square;
+    stroke: #B6B6BF;
+    stroke-width: 1.5px;
 }
 
 .check-icon {
-    stroke:#B6B6BF;
-    stroke-width: 1.5;
-    stroke-linecap:square;
+    stroke: #B6B6BF;
+    stroke-width: 1.5px;
 }
 
 .back-icon {
     stroke: #B6B6BF;
-    stroke-width: 1.5;
-    stroke-linecap: square;
+    stroke-width: 1.5px;
+}
+
+.tool-icon {
+    stroke: #15151A;
+    stroke-width: 1.5px;
+    fill: none;
+}
+
+.server-icon {
+    stroke: #15151A;
+    stroke-width: 1.5px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.cube-icon {
+    stroke: #15151A;
+    stroke-width: 1.5px;
+    fill: none;
 }
