@@ -7,15 +7,6 @@
     background: #27272E;
 }
 
-.context-menu:before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    background: red;
-}
-
 .context-menu__title {
     position: relative;
     color: #FFF;

@@ -57,6 +57,8 @@ export const Settings = () => {
         setIsDropdownOpen((value) => !value);
     };
 
+
+
     return (
         <form className={classes['settings']}>
             <div className={classes['settings__header']}>

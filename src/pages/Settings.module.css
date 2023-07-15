@@ -19,6 +19,18 @@
     border: none;
     position: relative;
 }
+.settings__select::before {
+    content: '';
+    visibility: hidden;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.settings__select_active::before {
+    visibility: visible;
+}
 
 .settings__select-toggle {
     display: flex;
@@ -29,11 +41,11 @@
     margin: -10px;
 }
 
+
 .settings__select-toggle-lable {
     color: #FFF;
     font-size: 16px;
 }
-
 .settings__select-toggle-icon {
     width: 18px;
     height: 18px;

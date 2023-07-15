@@ -10,7 +10,7 @@ export const SwitchedInput = ({className ,label, initValue = '', error, filters,
     const onInput = (event) => {
         if(filters) {
             setValue(filters(event.target.value));
-        } else{
+        } else {
             setValue(event.target.value)
         }
 
@@ -19,7 +19,7 @@ export const SwitchedInput = ({className ,label, initValue = '', error, filters,
             event.target.style.width = event.target.scrollWidth + 'px';
         }
     }
-
+    
     return (
         <>
             <label className={`${className} ${classes['input']}`}>

@@ -1,6 +1,7 @@
 import classes from './Main.module.css';
 import Router from "../../App/Router";
-import { useUI } from "../../store/ui-context";
+import {UIContextProvider, useUI} from "../../store/ui-context";
+import React from "react";
 
 const Main = ({className}) => {
     const uiContext = useUI();
@@ -14,9 +15,11 @@ const Main = ({className}) => {
     `;
 
     return (
-        <div className={mainClasses}>
-            <Router />
-        </div>
+        <UIContextProvider>
+            <div className={mainClasses}>
+                <Router />
+            </div>
+        </UIContextProvider>
     );
 }
 
